@@ -68,7 +68,7 @@
         const tokenizer = await loadTokenizer(createTokenizerModule, './tokenizer.model?v=1000');
         
         infoDiv.textContent = "Downloading weights: 0%";
-        const modelUrl = 'https://huggingface.co/pyu10055/gemma3_270m_qpc/blob/main/model_litert_qpc.safetensors';
+        const modelUrl = 'https://huggingface.co/pyu10055/gemma3_270m_qpc/resolve/main/model_litert_qpc.safetensors';
         const weights = await loadWeights(
           litert, device, modelUrl,
           (loaded, total) => {

@@ -68,8 +68,7 @@
         const tokenizer = await loadTokenizer(createTokenizerModule, './tokenizer.model?v=1000');
         
         infoDiv.textContent = "Downloading weights: 0%";
-        const targetUrl = 'https://github.com/pyu10055/litert_tensor_playground/releases/download/1.0.0/model_litert_qpc.safetensors';
-        const modelUrl = 'https://corsproxy.io/?' + encodeURIComponent(targetUrl);        
+        const modelUrl = 'https://huggingface.co/pyu10055/gemma3_270m_qpc/blob/main/model_litert_qpc.safetensors';
         const weights = await loadWeights(
           litert, device, modelUrl,
           (loaded, total) => {

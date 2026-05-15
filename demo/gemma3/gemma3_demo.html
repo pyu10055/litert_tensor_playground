@@ -69,7 +69,7 @@
         
         infoDiv.textContent = "Downloading weights: 0%";
         const weights = await loadWeights(
-          litert, device, './model_litert_qpc.safetensors?v=1000',
+          litert, device, 'https://github.com/pyu10055/litert_tensor_playground/releases/download/1.0.0/model_litert_qpc.safetensors',
           (loaded, total) => {
             infoDiv.textContent = `Downloading weights: ${(loaded / total * 100).toFixed(1)}%`;
           },
